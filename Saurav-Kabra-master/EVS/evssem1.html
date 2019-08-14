@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>StringWayTech</title>
+	<link rel="stylesheet" type="text/css" href="string.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav mr-auto">
+      				<!-- <li class="nav-item dropdown">
+        				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         				 <strong id="course">Courses</strong>
+        				</a>
+        				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          					<a class="dropdown-item" href="#">Stream</a>
+          					<a class="dropdown-item" href="#">Syllabus</a>
+          					<a class="dropdown-item" href="#">Question Paper</a>
+          					<a class="dropdown-item" href="#">Study Material</a>
+        				</div>
+        			</li> -->
+        			<li>
+        				<form class="form-inline my-2 my-lg-0">
+      						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      						<button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+    					</form>
+        			</li>
+    			</ul>
+    		</div>
+    		<div id="nav">
+    			<a class="navbar-brand" href="#"><img id="logo" src="logo.jpg"><strong>StringWayTech</strong></a>
+      		</div>
+    		<div>
+    			<ul class="navbar-nav mr-auto">
+
+             <div class="dropdown">
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <strong id="course">User Name</strong>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Notification</a>
+                    <a class="dropdown-item" href="#">Setting</a>
+                    <a class="dropdown-item" href="#">help</a>
+                    <a class="dropdown-item" href="#">Log out</a>
+                </div>
+              </li>
+            </div>
+
+      			</ul>
+			</div>
+	</nav>	
+	
+<!--Edit profile-->
+<div style="background-color:#e5e5e5;padding:50px;">
+ <div ><h2>User Name will be shown here</h2></div>
+  <div class="user-name">
+    <a onclick="document.getElementById('id01').style.display='block'" href="#">Edit Name</a>&nbsp;&nbsp;&nbsp;
+    <a onclick="document.getElementById('id01').style.display='block'" href="#">Edit Bio</a>
+  </div>
+  <div class="edit-profile">
+      <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-blue">Edit Profile</button>
+  </div>
+
+  <!--modal menu-->
+    <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-blue"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Edit Basic Info</h2>
+      </header>
+      <div class="w3-container">
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Real Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">User Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">India</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Bio</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+      </div>
+      <footer class="w3-container w3-blue">
+        <p></p>
+      </footer>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+// Edit Profile Modal
+var modal = document.getElementById('id01');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+      <span class="col-sm-2 left" >
+      	<br>
+        <nav class="nav flex-column">
+            <h6>My Stuff</h6>
+            <a class="nav-link" href="#">Courses</a>
+           <h6>My Account</h6>
+            <a class="nav-link" href="#">Progress</a>
+            <a class="nav-link" href="#">Profile</a>
+            <a class="nav-link" href="#">Teachers</a>
+          </nav>
+      </span>
+      <div class="col-sm-8">
+      	<br>
+  <h2>Total there will be approx 6 questions each of 3 marks , from all the chapters of the syllabus(Attempt any 5).</h2>
+<button class="accordion"><span class="spinner-grow spinner-grow-sm"></span>Environmental Studies December 2016 </button>
+<div class="panel">
+    <h4>Max marks : 60</h4>
+<div class="content_img">
+ 
+</div>
+ <p>		<ol type = "1"> <li><br>Attempt any five from the following:   [15] <br>
+	<ol type ="a">
+	<li>What is sustainable development. Why is there need for sustainable development? 
+	<li>Differentiate between : Renewable and Nonrenewable sources of energy.
+	<li>	What are the causes and effects of E-pollution ?
+	<li>	Write important functions of Central Pollution Control board (CPCB).
+	<li> 	Explain concept of Carbon Credit.
+	<li> What is Nuclear pollution? What are its sources and effects?
+	<li>	What is Ecological Sucession?
+
+    </ol>
+	<li> <br>
+	<ol type = "a">
+	<li>Explain social and economical aspects of sustainable development. [5]
+	<li> Draw neat labelled diagram of electrostatic precipitator and explain how it is useful to emissions?  [5]
+	<li>What is Hydropower? Draw a a suitable diagram and explain how hydropower is generated. [5]
+	</ol>
+	<li><br>
+	<ol type ="a">
+	<li>What is solid waste? Explain solid waste management by incineration. [5]
+	<li>Write important functions and powers of State Pollution Control Board. [5]
+	<li> Write a case study on Cloudburst and Landslides at Kedarnath in June 2013.  [5]
+	</ol>
+	<li><br>
+	<ol type ="a">
+	<li>Explain global environmental crisis pertaining to population. [5]
+	<li>Explain environmental consent and authorization mechanism. [5]
+	<li>Draw a neat diagram of wind turbine and explain how it helps in energy production. [5]
+	</ol>
+	<li> <br>
+	<ol type ="a">
+	<li>Explain how resource utilisation as per carrying capacity is an important control measure for sustainable dvelopment.   [5]
+	<li>Write a case study on pollution of Ganga river.   [5]
+	<li>Draw a schematic diagram and explain principle and working of photovoltaic cells.   [5]
+	</ol>
+	
+	<li> <br>
+	<ol type="a">
+	<li>Explain the causes and effects of depletion of natural water resources.                                               [5]
+	<li>Write a note on Industrial waste water treatment.   [5]
+	<li>What is disaster management. Explain how techniques of disaster management are implemented in the event of eartquake.   [5]
+	</ol>
+	
+	</p>
+</div>
+<button class="accordion"><span class="spinner-grow spinner-grow-sm"></span>Environmental Studies December 2017</button>
+<div class="panel">
+    <h4>Max marks : 60</h4>
+<div class="content_img">
+ 
+</div>
+ <p>		<ol type = "1"> <li><br>Attempt any five from the following:   [15] <br>
+	<ol type ="a">
+	<li>Explain depleting nature of forests: causes, effects and prevention.
+	<li>Explain the concept of socio-economic aspects of socio economic development.
+	<li>What is meant by 'greenhouse effect' ?
+	<li>Write a short note : Environmental Clearance Mechanism
+	<li> 	What are limitations of conventional energy sources ?
+	<li> Write a short note on 'water crisis'.
+	<li>Explain the concept of ' carbon credit'.
+
+    </ol>
+	<li> <br>
+	<ol type = "a">
+	<li>Write a detailed account of  "Chipko Movement."   [5]
+	<li> 	What are '3R control measure'?  [5]
+	<li>Define 'noise pollution'. What are its sources? What are its health effects?  [5]
+	</ol>
+	<li><br>
+	<ol type ="a">
+	<li>Explain principle, construction and working of electrostatic precipitator.   [5]
+	<li>Discuss the case study of cloudburst and landslide at Kedarnath. [5]
+	<li>How electricity is generated from wind energy?   [5]
+	</ol>
+	<li><br>
+	<ol type ="a">
+	<li>Discuss the case study of London Smog.   [5]
+	<li>Write in details : Food Chain and Food Web. 	[5]
+	<li>Write a note on : Green buildings Concept and objectives.  [5]
+	</ol>
+	<li> <br>
+	<ol type ="a">
+	<li>What is landpollution ? Discuss solid waste management.[5]
+	<li>Which are renewable energy resources ? Write about their importance. [5]
+	<li>Write on : Functions and powers of Central pollution control board.   [5]
+	</ol>
+	
+	<li> <br>
+	<ol type="a">
+	<li>What is nuclear pollution? Discuss Fukushima disaster.   [5]
+	<li>What is an ecosystem? Discuss the classifications of an ecosystem with examples.   [5]
+	<li>Draw a schematic diagram and explain principle and working of photovoltaic cells. [5]
+	</ol>
+	
+	</p>
+</div>
+<button class="accordion"><span class="spinner-grow spinner-grow-sm"></span>Environmental Studies December 2018</button>
+<div class="panel">
+    <h4>Max marks : 60</h4>
+<div class="content_img">
+ 
+</div>
+ <p>		<ol type = "1"> <li><br>Attempt any five from the following:   [15] <br>
+	<ol type ="a">
+	<li>What are reasons for depletion of soil resourecs?
+	<li>Explain principle involved in the working of photovoltaic cells.
+	<li>Write a brief note on noise pollution.
+	<li>Define  sustainable development. Why is there need for sustainable development? 
+	<li>Explain the term  carbon credit.
+	<li> What are the sources and consequences of Green House Effect?
+	<li>Why there is need for public awareness on environmental education?
+
+    </ol>
+	<li> <br>
+	<ol type = "a">
+	<li>Write important features of case study on Narmada Bachao Andolan, took place in Gujarat in 1980.   [5]
+	<li> Draw flow sheet diagram and explain the process of industrial waste water treatment. [5]
+	<li>Draw schematic of flat plate collector and explain its role in tapping solar energy.  [5]
+	</ol>
+	<li><br>
+	<ol type ="a">
+	<li>Give brief account of cae study on Lonson Smog occured in U.K. in December, 1952.  [5]
+	<li>Write a brief note on environmental clearance and authorisation mechanism. [5]
+	<li>Write the effects produced by different indoor air pollutants.  [5]
+	</ol>
+	<li><br>
+	<ol type ="a">
+	<li>What is ecological succession? Discuss its impact.  [5]
+	<li>Write important powers and functions of State Pollution Control Board (SPCB).   [5]
+	<li>Draw a neat labelled diagram and explain the process of generating electricity from geothermal energy. 	[5]
+	</ol>
+	<li> <br>
+	<ol type ="a">
+	<li>Explain economic and environmental aspects associated with sustainable development.  	[5]
+	<li>Draw a neat diagram and explain the working og Venturi Scrubber. 	[5]
+	<li>Draw a neat schematic and explain the process of hydropower generation.		[5]
+	</ol>
+	
+	<li> <br>
+	<ol type="a">
+	<li>Explain the reasons and effects of depletion of our natural forest resources.		[5]
+	<li>How solid waste management is carried out by composting? 		[5]
+	<li>Explain the objectives of "Green Building." 			[5]
+	</ol>
+	
+	</p>
+</div>
+<button class="accordion"><span class="spinner-grow spinner-grow-sm"></span>Environmental Studies May 2017</button>
+<div class="panel">
+    <h4>Max marks : 60</h4>
+<div class="content_img">
+ 
+</div>
+ <p>		<ol type = "1"> <li><br>Attempt any five from the following:   [15] <br>
+	<ol type ="a">
+	<li>Explain food chain.
+	<li>Explain environmental aspects of sustainable development.
+	<li>What is meant by Epollution?
+	<li>Differentiate between Conventional and Non Conventional energy.
+	<li>Explain the concept of carbon credit.
+	<li> Explain Environmental Impact Assessment (EIA).
+	<li>Explain causes and effects of Ozone Layer Depletion.
+
+    </ol>
+	<li> <br>
+	<ol type = "a">
+	<li>Explain various modes needed for public awareness to protect the earth from environmental degradation.		[5]
+	<li> Explain the need and importance of Environmental Studies.		[5]
+	<li>Explain the classification of ecosystem. 			[5]
+	</ol>
+	<li><br>
+	<ol type ="a">
+	<li>Explain the construction, principle and working of Venturi Scrubber.		[5]
+	<li>What is meant by water pollution? Explain sources and effects of water pollution.		[5]
+	<li>List the widely used methods for solid waste treatment. Explain any one in detail.		[5]
+	</ol>
+	<li><br>
+	<ol type ="a">
+	<li>Outline the important features of environmental clearance and authorisation mechanism.		[5]
+	<li>What are the important functions of Central Pollution Control Board?		[5]
+	<li>What do you mean by noise pollution? Explain the sources and effects of noise pollution.		[5]
+	</ol>
+	<li> <br>
+	<ol type ="a">
+	<li>How electricity is generated by using wind energy?		[5]
+	<li>State and explain the principle, construction and working of flat plate collector used for solar energy.		[5]
+	<li>What are the limitations of conventional sources of energy?		[5]
+	</ol>
+	
+	<li> <br>
+	<ol type="a">
+	<li>Explain thecase study of Kedarnath.		[5]
+	<li>Explain the concept and objective of Green Building.		[5]
+	<li>What are the various techniques of disaster management?		[5]
+	</ol>
+	
+	</p>
+</div>
+<button class="accordion"><span class="spinner-grow spinner-grow-sm"></span>Environmental Studies May 2018</button>
+<div class="panel">
+    <h4>Max marks : 60</h4>
+<div class="content_img">
+ 
+</div>
+ <p>		<ol type = "1"> <li><br>Attempt any five from the following:   [15] <br>
+	<ol type ="a">
+	<li> What is mean by E pollution?
+	<li>Explain concept of carbon credit.
+	<li>explain the concept of ecological pyramid.
+	<li>Differentiate between Conventional and Non Conventional energy.
+	<li>Explain food chain.
+	<li> Explain causes and effect of Ozone layer depletion. 
+	<li> Explain the concept of acid rain.
+
+    </ol>
+	<li> <br>
+	<ol type = "a">
+	<li>Explain various modes needed for public awareness to protect the earth from environmental degradation.		[5]
+	<li> Explain the need and importance of Environmental Studies.		[5]
+	<li>Explain the classification of ecosystem. 			[5]
+	</ol>
+	<li><br>
+	<ol type ="a">
+	<li>How electricity is generated by using wind energy?		[5]
+	<li>State and explain the principle, construction and working of flat plate collector used for solar energy.		[5]
+	<li>What are the limitations of conventional sources of energy?		[5]
+	</ol>
+	<li><br>
+	<ol type ="a">
+	<li>What are green buildings? what are the advantages of green structure? 		[5]
+	<li>Discuss various indoor air pollutants.				[5]
+	<li>What is the role of disaster Management.		[5]
+	</ol>
+	<li> <br>
+	<ol type ="a">
+	<li>Discuss briefly about Green House Effect.			[5]
+	<li>What are the main causes of soil degradation?			[5]
+	<li>What are the measures to control global warming?			[5]
+	</ol>
+	
+	<li> <br>
+	<ol type="a">
+	<li>Discuss the role of 3R in sustainable development.	[5]
+	<li>How increasing population is exerting extra pressure on land and mineral resource discuss.	[5]
+	<li>What do you mean by land filling? Explain briefly.	[5]
+	</ol>
+	
+	</p>
+</div>
+<button class="accordion"><span class="spinner-grow spinner-grow-sm"></span>Environmental Studies May 2019</button>
+<div class="panel">
+    <h4>Max marks : 60</h4>
+<div class="content_img">
+ 
+</div>
+ <p>		<ol type = "1"> <li><br>Attempt any five from the following:   [15] <br>
+	<ol type ="a">
+	<li> Define soil depletion. Give the classification of ecosystem.
+	<li>Define pollution. State any four sources of soil pollution.
+	<li>Give the functions(any six) of State Pollution Control Board.
+	<li>Define and give any four objectives of Green Building.
+	<li>Define Geothermal energy. Draw a neat and labelled diagram of steam turbine power plant.
+	<li> Define and give any four limitations of conventional sources of energy.
+	<li> Define land pollution. State any two sources of soil pollution. Give any two adverse affects of soil pollution.
+
+    </ol>
+	<li> <br>
+	Attempt the following:   [15] <br>
+	<ol type ="a">
+	<li> Give the reasons and consequences of cloudburst and landslides at Kedarnath.		[4]
+	<li>Define noise pollution. State any four sources of noise pollution. State any four bad effects of noise pollution.Give the reactions takinig place in the environment durong acid rain.		[5]
+	<li>Draw a neat and labelled diagram of Electrostatic precipitator used for the purification of air pollutants. Give the principle involved in electrostatic precipitator. Give any two advantages and disadvantages for it.			[6]
+    </ol>
+	<li><br>	Attempt the following:   [15] <br>
+	<ol type ="a">
+	<li>Define indoor air pollution. State any 4 sources of indoor air pollution. State any 4 bad effects of indoor air pollution.			[5]
+	<li>Draw neat and labelled diagram for solar heater. Give the principle involved in solar heater. Give the working of solar heater.		[5]
+	<li>What is the meaning of Sustainable development? Give any 4 social and economic aspcts of sustainable development.		[5]
+    </ol>
+
+	<li><br>
+	Attempt the following:   [15] <br>
+	<ol type ="a">
+	<li>Give the importance of environmental education. How are biomass and energy flow related in ecological pyramid?			[4]
+	<li>Draw a neat and labelled diagram of solar cell. Give the principle involved in solar cell. Give any two advantages and disadvantages of solar cell.		[6]
+	<li>Explain the concept of control measures through the concept of recover. Give the advantages and disadvantages of such program.				[5]
+    </ol>
+	<li> <br>
+	Attempt the following:   [15] <br>
+	<ol type ="a">
+	<li>Define wind energy. Give the principle involved in wind turbines. Give any two advantages and disadvantages of wind energy. Give the construction of wind turbines.			[6]
+	<li>Explain the case study of Bolier Blast Tragedy in Dombivali MIDC.		[4]
+	<li>Define water pollution. State any 4 sources of water pollution. State any 4 bad effects of water pollution.			[5]
+    </ol>
+	
+	<li> <br>
+	Attempt the following:   [15] <br>
+	<ol type ="a">
+	<li>Give the importance of environmental education from environmental degradation. Give the cayses of depletion of natural water resources.			[5]
+	<li>Define photochemical smog. State any 4 sources of photochemical smog. State any 4 bad effects of photochemical smog.				[6]
+	<li>Explain the case study of earthquake in Latur.			[4]
+    </ol>
+	
+	</p>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>

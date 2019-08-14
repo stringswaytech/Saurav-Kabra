@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Form</title>
+        <link rel="stylesheet" href="feedbackform.css">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700|Poppins" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <header>
+            <h1>Feedback Form</h1>
+            <p><b style="color: white;">
+                We appreciate your Feedback..!
+            </b></p>
+        </header>
+        <form>
+            <div class="divider1" name="Name">
+                <div class="leftside" id="toptext">
+                    <label><strong>Name:</strong></label>
+                </div>
+                <div class="rightside">
+                    <input autofocus type="text" class="input-field" placeholder="Name" required>
+                </div>
+            </div>
+            <div class="divider2" name="email">
+                <div class="leftside" id="toptext">
+                    <label><strong>Email:</strong></label>
+                </div>
+                <div class="rightside">
+                    <input type="email" class="input-field" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="divider3" name="recommend">
+                <div class="leftside">
+                    <label>How likely is that you would recommend <b>StringWayTech</b> to a friend?</label>
+                </div>
+                <div class="rightside">
+                    <ul class="question">
+                        <label for="definitely"><input id="definitely" name="radiobuttons" type="radio">Definitely</label>
+                        <br>
+                        <label for="maybe"><input id="maybe" name="radiobuttons" type="radio">Maybe</li></label>
+                        <br>
+                        <label for="notsure"><input id="notsure" name="radiobuttons" type="radio">Not sure</li></label>
+                    </ul>
+                </div>
+            </div>
+            <div class="divider8" name="comments">
+                <div class="leftside">
+                    <label><strong>Any Comments or Suggestions?</strong></label>
+                </div>
+                <div class="rightside">
+                    <textarea class="input-field" style="height:50px;resize:vertical;" placeholder="Enter your comment here..."></textarea>
+                </div>
+            </div>
+            <div class="divider" name="rate">
+            	<div class="leftside">
+            		<label><strong>Rate Our Services</strong></label>
+            	</div>
+            	<div class="rightside">
+            		<ul class="question2">
+                        <label for="poor"><input id="poor" name="radiobutton" type="radio">Poor</label>
+                        <br>
+                        <label for="good"><input id="good" name="radiobutton" type="radio">Good</li></label>
+                        <br>
+                        <label for="excellent"><input id="excellent" name="radiobutton" type="radio">Excellent</li></label>
+                    </ul>
+            	</div>
+            </div>
+             <button class="submitbutton btn btn-primary" type="submit">Submit</button> 
+        </form>
+    </body>
+
+</html> 
