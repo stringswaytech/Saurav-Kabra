@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+
+#leftside {
+  width: 3500px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#math{
+  font-size: 25px;
+}
+
+li{
+  margin-top: 10px;
+}
+
+
+div.row{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+p{
+  margin-left: 20px;
+}
+
+div.card-deck.jumbotron.jumbotron-fluid{
+  /*margin-left: 200px;*/
+}
+
+div.card-deck.jumbotron.jumbotron-fluid {
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+.card-title{
+  text-align: center;
+}
+
+div.card-footer {
+  background-color: lightblue;
+}
+
+button.btn.btn-dark {
+  margin-left: 135px;
+}
+
+
+.card:hover{
+  -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+  box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+}
+
+
+.footer {
+  /*margin-left: 200px;*/
+  margin-top: 100px;
+  background-color: #303036;
+  color: #d3d3d3;
+  width: auto;
+  height: 300px;
+  position: relative;
+  bottom: 0px;
+  /*padding: 10px 10px 0px 10px;*/
+}
+
+.footer .footer-content{
+  height: 400px;
+  display: flex;
+
+}
+
+.footer .footer-content .footer-section{
+  flex: 1;
+  /*border: 1px solid white;*/
+  padding:25px;
+}
